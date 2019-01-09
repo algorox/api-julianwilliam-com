@@ -1,7 +1,7 @@
 {
-  "name": "jwlm-api-services",
+  "name": "api-julianwilliam-com",
   "version": "1.0.0",
-  "description": "jwlm api services including Auth0 Management API",
+  "description": "julianwilliam api services",
   "repository": "",
   "author": "Auth0",
   "license": "MIT",
