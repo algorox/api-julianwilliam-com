@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
 
   if(req.body.username && (emailValidator.validate(req.body.username) === true ) && (req.body.password.length >= 8)) {
   var params = {
-    connection: "AWS-MySQL-Auth0-Schema",
+    connection: process.env.SIGN_UP_CONNECTION,
     email: req.body.username,
     email_verified: false,
     verify_email: true,
