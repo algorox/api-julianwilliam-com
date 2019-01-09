@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
 
     //Connection should be set here
     var passwordData = {
-        connection: 'AWS-MySQL-Auth0-Schema',
+        connection: process.env.SIGN_UP_CONNECTION,
         password: req.body.newPassword
     }
     
