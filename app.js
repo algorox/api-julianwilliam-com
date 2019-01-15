@@ -15,6 +15,7 @@ const changePassword = require('./routes/v1/changePassword')
 const resetPassword = require('./routes/v1/resetPassword')
 const signUp = require('./routes/v1/signUp')
 const deleteUser = require('./routes/v1/deleteUser')
+const failover_test = require('./routes/v1/failover')
 const ExpressBrute = require('express-brute');
 
 require('dotenv').config();
@@ -83,6 +84,8 @@ app.use('/api/public/resetPassword', resetPassword)
 app.use('/api/public/signUp', signUp)
 
 app.use('/api/public/login', login)
+
+app.use('/api/public/failover_test', bruteForce.prevent, failover_test)
 
 app.listen(port, function () {
   console.log('API Services started on port: ' + port);
