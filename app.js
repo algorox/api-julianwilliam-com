@@ -15,7 +15,6 @@ const changePassword = require('./routes/v1/changePassword')
 const resetPassword = require('./routes/v1/resetPassword')
 const signUp = require('./routes/v1/signUp')
 const deleteUser = require('./routes/v1/deleteUser')
-const failoverTest = require('./routes/v1/failoverTest')
 const ExpressBrute = require('express-brute');
 
 require('dotenv').config();
@@ -57,7 +56,7 @@ const access_token = jwt({
 const checkReadUserScopes = jwtScopes(['read:user'])
 
 //MUST NOT BE REMOVED
-app.use('/', bruteForce.prevent)
+app.use('/')
 app.use('/api/private', access_token, checkReadUserScopes)
 //MUST NOT BE REMOVED
 
@@ -84,8 +83,6 @@ app.use('/api/public/resetPassword', resetPassword)
 app.use('/api/public/signUp', signUp)
 
 app.use('/api/public/login', login)
-
-app.use('/api/public/failover_test', failoverTest)
 
 app.listen(port, function () {
   console.log('API Services started on port: ' + port);
