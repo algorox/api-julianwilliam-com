@@ -57,7 +57,6 @@ const access_token = jwt({
 const checkReadUserScopes = jwtScopes(['read:user'])
 
 //MUST NOT BE REMOVED
-app.use('/')
 app.use('/api/private', access_token, checkReadUserScopes)
 //MUST NOT BE REMOVED
 
