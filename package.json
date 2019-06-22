@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "auth0": "^2.13.0",
-    "auth0-api-jwt-rsa-validation": "0.0.1",
+    "auth0-api-jwt-rsa-validation": "0.0.3",
     "body-parser": "^1.18.3",
     "castleio-sdk": "^0.3.5",
     "conditional-middleware": "^0.2.0",
@@ -32,7 +32,7 @@
     "jwt-decode": "^2.2.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.9",
-    "npm": "^6.4.1",
+    "npm": "^6.9.0",
     "passport": "^0.3.0",
     "passport-auth0": "^0.6.0",
     "pug": "~2.0.0-beta11",
