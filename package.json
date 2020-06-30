@@ -24,7 +24,7 @@
     "email-validator": "^2.0.4",
     "express": "^4.16.4",
     "express-brute": "^1.0.1",
-    "express-jwt": "^5.1.0",
+    "express-jwt": "^6.0.0",
     "express-jwt-authz": "^1.0.0",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.3.0",
