@@ -35,7 +35,7 @@
     "npm": "^6.9.0",
     "passport": "^0.3.0",
     "passport-auth0": "^0.6.0",
-    "pug": "~2.0.0-beta11",
+    "pug": "~3.0.1",
     "restler": "^3.4.0",
     "serve-favicon": "^2.5.0",
     "uuid": "^3.1.0"
